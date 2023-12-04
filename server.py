@@ -1,10 +1,7 @@
-import http.server
-import socketserver
+a = 200
+b = 33
 
-PORT = 8080
-
-Handler = http.server.SimpleHTTPRequestHandler
-
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
-    print("serving at port", PORT)
-    httpd.serve_forever()
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
